@@ -1,0 +1,180 @@
+
+body { margin:0; font-family:'Inter', sans-serif; background:#0a0a0a; color:#fff; }
+a { text-decoration:none; }
+.hero { padding:100px 20px 60px; text-align:center; background:linear-gradient(to bottom,#000,#0f0f0f); }
+.hero h1 { font-size:2.5em; margin-bottom:0.5em; }
+.hero p { font-size:1.2em; color:#ccc; max-width:600px; margin:0 auto; }
+.cta { background:#ffcc00; color:#000; padding:14px 28px; border-radius:10px; font-weight:bold; display:inline-block; margin-top:25px; }
+
+.video-section { padding:40px 20px; text-align:center; }
+.promo-video { width:100%; max-width:800px; border-radius:12px; }
+
+.benefits { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; padding:40px 20px; text-align:center; }
+.benefit { background:#1b1b1b; padding:20px; border-radius:12px; flex:1 1 200px; max-width:250px; }
+
+.plans { display:flex; justify-content:center; gap:40px; padding:60px 20px; }
+.plan { background:#111; padding:30px; border-radius:15px; width:280px; text-align:center; }
+.plan h3 { font-size:1.4em; }
+.plan p { font-size:1.1em; color:#ffcc00; margin:10px 0; }
+.plan ul { list-style:none; padding:0; margin:20px 0; color:#ccc; }
+.plan ul li { margin:8px 0; }
+.cta-small { background:#fff; color:#000; padding:10px 20px; border-radius:8px; font-weight:bold; }
+
+.testimonials { background:#0f0f0f; padding:60px 20px; text-align:center; }
+.testimonial { margin:10px auto; max-width:600px; font-style:italic; color:#ccc; }
+
+.steps { padding:60px 20px; text-align:center; }
+.steps ol { text-align:left; max-width:600px; margin:0 auto; }
+.steps li { margin-bottom:12px; }
+
+.market { padding:60px 20px; text-align:center; }
+.market-widget { width:100%; max-width:800px; height:400px; border:none; border-radius:12px; }
+
+.form-section { padding:60px 20px; text-align:center; }
+form { max-width:400px; margin:0 auto; }
+input, button { width:100%; padding:12px; margin:8px 0; border:none; border-radius:8px; }
+button { background:#ffcc00; color:#000; font-weight:bold; }
+
+footer { padding:30px 20px; text-align:center; font-size:0.85em; color:#888; background:#111; }
+
+#preloader {
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: #0a0a0a;
+  display: flex; align-items: center; justify-content: center;
+  z-index: 9999; transition: opacity 0.5s ease;
+}
+.loader img {
+  width: 100px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+.loader .bar {
+  width: 100px; height: 6px;
+  background: #ffcc00;
+  margin-top: 20px;
+  border-radius: 4px;
+  animation: loadbar 1.5s infinite linear;
+}
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.6; }
+}
+@keyframes loadbar {
+  0% { transform: scaleX(0.2); }
+  50% { transform: scaleX(1); }
+  100% { transform: scaleX(0.2); }
+}
+
+.ai-section { padding: 60px 20px; background: #0d0d0d; }
+.ai-content { display: flex; flex-wrap: wrap; align-items: center; gap: 40px; max-width: 1200px; margin: auto; }
+.ai-content .text { flex: 1 1 400px; color: #eee; }
+.ai-content .text h1 { font-size: 2em; margin-bottom: 10px; }
+.ai-content .text p { font-size: 1em; color: #bbb; }
+.ai-content .image { flex: 1 1 400px; }
+.ai-content img { width: 100%; border-radius: 10px; }
+
+.trust-section, .carousel-section { text-align: center; background: #111; }
+.full-banner { width: 100%; max-width: 1200px; margin: auto; display: block; border-radius: 12px; }
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('../assets/bg-interactivo.gif') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.testimonials-grid {
+  background: rgba(0,0,0,0.8);
+  padding: 60px 20px;
+  text-align: center;
+}
+.testimonials-grid h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: #111;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  color: #eee;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+.card h3 {
+  font-size: 1.1em;
+  color: #ffcc00;
+}
+.card p {
+  font-size: 0.95em;
+  margin: 15px 0;
+  color: #ccc;
+}
+.card span {
+  font-size: 0.85em;
+  color: #777;
+}
+
+.hero-logo {
+  width: 120px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.full-width {
+  width: 100vw;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.step {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  color: #eee;
+  text-align: center;
+  font-size: 1em;
+  box-shadow: 0 0 8px rgba(255,255,255,0.05);
+}
+
+.wide-chart {
+  height: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 14px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('../assets/bg-interactivo.gif') center/cover no-repeat;
+  opacity: 0.08;
+  z-index: -1;
+  pointer-events: none;
+}
+
+body:hover::before {
+  animation: glitchMove 1s infinite alternate ease-in-out;
+}
+
+@keyframes glitchMove {
+  0% { transform: translate(0px, 0px); }
+  100% { transform: translate(3px, -3px); }
+}

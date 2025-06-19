@@ -1,0 +1,6 @@
+INSTRUCCIONES PARA VER LA LANDING:
+
+1. Abre la carpeta en Visual Studio Code.
+2. Instala la extensión 'Live Server'.
+3. Haz clic derecho en index.html → 'Open with Live Server'.
+4. Asegúrate de incluir el video 'For-Website-V6.a1.m4v' dentro de la carpeta /assets.
